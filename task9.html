@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested Grid</title>
+  <style>
+    .outer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      background-color: #ddd;
+    }
+
+    .outer-item {
+      background-color: #aaf;
+      padding: 20px;
+      font-size: 20px;
+      border: 2px solid #000;
+    }
+
+   
+    .inner-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+      background-color: #ffe;
+      padding: 10px;
+    }
+
+    .inner-item {
+      background-color: #ffa;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer-grid">
+    <div class="outer-item">Item 1</div>
+
+    <div class="outer-item">
+      Item 2 with inner grid:
+      <div class="inner-grid">
+        <div class="inner-item">A</div>
+        <div class="inner-item">B</div>
+        <div class="inner-item">C</div>
+        <div class="inner-item">D</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
