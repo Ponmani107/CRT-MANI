@@ -1,0 +1,11 @@
+
+
+div{
+    height: 20px;
+    width:50;
+    border: red;
+    padding: 20%;
+}
+.grid {
+  grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+}
